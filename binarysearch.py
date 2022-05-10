@@ -1,12 +1,6 @@
-elements = []
-n = int(input("Enter total elements? "))
-for i in range(0, n):
-    ele = int(input())
-    elements.append(ele)
-
-
-item = float(input("Enter element to be searched? "))
-l = elements[0]
+elements = [10,20,32,30,51,16,78,100,89,90,56,80,90,111,8,9,0]
+item = 0
+l = 0
 r = len(elements) - 1
 
 while(l <= r):
@@ -18,4 +12,3 @@ while(l <= r):
         r = mid - 1
     else:
         l = mid + 1
-print(elements[0])
